@@ -1,0 +1,15 @@
+@mixin before_title {
+    &::before {
+        content: '';
+        position: absolute;
+        border-radius: 100%;
+        top: 87%;
+        left: -14px;
+        width: 36px;
+        height: 36px;
+        background: $main-color;
+        z-index: -2;
+
+    }
+   
+}

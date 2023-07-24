@@ -1,0 +1,20 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    &__subtitle {
+        padding-top: 209px;
+        position: relative;
+        @include before_title;
+    }
+    &__btn { 
+        display: flex;
+        margin-top: 25px;
+        flex-direction: row;
+        .bgnone {
+            background: none;
+            box-shadow: none;
+
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.info {
+    padding-top: 120px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 480px 670px;
+        grid-template-rows: minmax(245px, auto) minmax(255px, auto) ;
+        grid-auto-rows:minmax(245px, auto) ;
+        column-gap: 70px;
+        row-gap: 40px;
+
+    }
+    &__photo {
+        grid-row: 1/3;
+    }
+    &__myskills {
+        display: grid;
+        grid-template-columns: 309px 309px;
+        grid-template-rows: minmax(150px, auto) minmax(150px, auto) ;
+        grid-auto-rows:minmax(245px, auto) ;
+        column-gap: 50px;
+        row-gap: 20px;
+        &_aboutskill {
+            display: grid;
+            grid-template-columns: 50px 256px;
+            grid-auto-rows:minmax(20px, auto) minmax(20px, auto) ;
+            .skill_icon {
+                img {
+                    display: block;
+                    position: relative;
+                    @include before_title;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        @include before_title;
+    }
+  
+
+ }
