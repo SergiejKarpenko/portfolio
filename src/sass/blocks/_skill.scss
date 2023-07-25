@@ -1,0 +1,41 @@
+.skill {
+    margin-top: 126px;
+    &__wrapper {
+        margin: 60px 10px 128px 10px;
+        display: grid;
+        grid-template-columns: repeat(4,270px);
+        gap: 13px;
+
+    }
+    &__item {
+        padding: 30px 30px 25px 30px;
+        width: 270px;
+        height: 270px;
+        border: 1px solid #000;
+        background: rgba(196, 196, 196, 0.00);
+        h3 {
+            margin-top: 25px;
+        }
+    }
+    &__interest {
+
+        &_item {
+            width: 350px;
+            height: 70px;
+            margin-bottom: 100px;
+            &-title {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 12px;
+            }
+            &-scale {
+                width: 350px;
+                height: 14px;
+                background: $main-color ;
+                background-size:70%;
+               
+            }
+        }
+       
+    }
+}
