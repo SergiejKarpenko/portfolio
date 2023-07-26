@@ -18,6 +18,12 @@
         }
     }
     &__interest {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            column-gap: 45px;
+            grid-auto-rows: minmax(14px);
+        }
 
         &_item {
             width: 350px;
@@ -27,12 +33,25 @@
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 12px;
+                .before{
+                    position: relative;
+                    font-weight: 700;
+                    @include before_title;
+                    &:before {
+                        top: -9px;
+                    }
+                }
             }
             &-scale {
                 width: 350px;
                 height: 14px;
-                background: $main-color ;
-                background-size:70%;
+                border-radius: 4px;
+                background: #E8E4DE;
+                &_off {
+                    border-radius: 4px;
+                    height: 14px;
+                    background: $main-color ;
+                }
                
             }
         }
